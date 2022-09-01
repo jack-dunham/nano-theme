@@ -145,10 +145,10 @@
   :type 'boolean :group 'nano-theme-fonts)
 
 (defface nano-mono
-  '((t (:family "Roboto Mono"
+  '((t (:family "Fira Code"
         :height 140
         :weight light)))
-  "Default monospaced font (Roboto Mono Light, 14pt)."
+  "Default monospaced font (Fira Code Light, 14pt)."
   :group 'nano-theme-fonts)
 
 (defface nano-mono-alt
@@ -159,10 +159,10 @@
   :group 'nano-theme-fonts)
 
 (defface nano-sans
-  '((t (:family "Roboto"
+  '((t (:family "Fira Sans"
         :height 140
         :weight light)))
-  "Default proportional sans font (Roboto Light, 14pt)."
+  "Default proportional sans font (Fira Sans Light, 14pt)."
   :group 'nano-theme-fonts)
 
 (defface nano-serif
@@ -425,10 +425,10 @@ background color that is barely perceptible."
                           'wrap (make-glyph-code ?- 'nano-faded))
 
   ;; Nerd font for glyph icons
-  (let ((roboto-nerd (font-spec :name "RobotoMono Nerd Font Mono")))
+  (let ((roboto-nerd (font-spec :name "FiraCode Nerd Font Mono")))
     (if (find-font roboto-nerd)
         (set-fontset-font t '(#xe000 . #xffdd) roboto-nerd)
-      (message "Roboto Mono Nerd font has not been found on your system"))))
+      (message "Fira Code Nerd font has not been found on your system"))))
 
 
 ;; (defun inherit (face &optional inherit)
